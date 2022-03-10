@@ -11,7 +11,16 @@ function numberToWord(num) {
 
   if (num < 10) {
     return singulars[num];
-  }
-  else if (num >= 10 && num < 20) {
+  } else if (num >= 10 && num < 20) {
     return teens[number];
   }
+
+}
+
+//Show the result on the frontend
+document.getElementById("submit").addEventListener("click", function() {
+
+  let number = document.getElementById("inputField").value;
+  
+  document.getElementById("result").innerHTML = "Your number: " + numberToWord(number)
+});
