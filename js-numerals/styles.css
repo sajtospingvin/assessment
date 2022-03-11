@@ -12,6 +12,7 @@ body {
 .inputForm {
    position: relative;
    display: inline-block;
+   width:300px;
 }
 
 input {
